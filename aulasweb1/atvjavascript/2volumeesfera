@@ -1,0 +1,13 @@
+function calcularVolumeEsfera(raio) {
+    return (4 / 3) * Math.PI * Math.pow(raio, 3);
+  }
+  
+  const raio = parseFloat(prompt("Digite o valor do raio da esfera:"));
+  
+  if (raio > 0) {
+    const volume = calcularVolumeEsfera(raio);
+    console.log(`O volume da esfera é ${volume.toFixed(2)}`);
+  } else {
+    console.log("Por favor, insira um valor válido e positivo para o raio.");
+  }
+  
