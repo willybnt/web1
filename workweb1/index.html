@@ -1,149 +1,29 @@
-html
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/e4048c1cde.js" crossorigin="anonymous"></script>
-    <title>tasknow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Serviços MAB</title>
 </head>
 <body>
     <div class="container">
         <header>
             <nav>
                 <div class="nav-container">
-                    <img id="logo" src="img/logo.webp" alt="JobFinder">
+                    <img id="logo" src="img/logo.png" alt="Serviços MAB">
                     <ul>
                         <li><a href="#">Encontrar vagas</a></li>
-                        <li><a href="#">Solicitar vagas</a></li>
-                        <li><a href="#">contato</a></li>
+                        <li><a href="#">Enviar vagas</a></li>
+                        <li><a href="#">Contato</a></li>
                     </ul>
                 </div>
             </nav>
             <div id="main-banner">
-                <div id="search-form">
-                    <h1>A melhor forma de encontrar seu novo emprego!</h1>
-                    <p>Mantenha-se sempre atento as melhores vagas e oportunidades de emprego do mercado.</p>
-                    <form>
-                        <input type="text" name="job" placeholder="Digite o cargo">
-                        <select name="region">
-                            <option value="Todas as regiões"></option>
-                        </select>
-                        <select name="post">
-                            <option value="">Cargo</option>
-                        </select>
-                        <input type="submit" value="Pesquisar">
-                    </form>
-                </div>
+                <div id="search-form"></div>
             </div>
         </header>
-        <main id="lastjobs-container" class="wrapper">
-            <h1>latest vacancies sent</h1>
-            <ul>
-                <li>
-                    <a href="#" class="click-area"></a>
-                    <div class="classcompany-box">
-                        <img src="" alt="">
-                        <div class="company-info">
-                            <h3>Developer</h3>
-                            <p>Google</p>
-                        </div>
-                    </div>
-                    <div class="locality">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Mountain View, California</p>
-                    </div>
-                    <div class="job-type">
-                        <span class="clt">CLT</span>
-                    </div>
-                </li>
-                <li>
-                    <a href="#" class="click-area"></a>
-                    <div class="classcompany-box">
-                        <img src="" alt="">
-                        <div class="company-info">
-                            <h3>Developer</h3>
-                            <p>Google</p>
-                        </div>
-                    </div>
-                    <div class="locality">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Mountain View, California</p>
-                    </div>
-                    <div class="job-type">
-                        <span class="clt">CLT</span>
-                    </div>
-                </li>
-                <li>
-                    <a href="#" class="click-area"></a>
-                    <div class="classcompany-box">
-                        <img src="" alt="">
-                        <div class="company-info">
-                            <h3>Developer</h3>
-                            <p>Google</p>
-                        </div>
-                    </div>
-                    <div class="locality">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Mountain View, California</p>
-                    </div>
-                    <div class="job-type">
-                        <span class="clt">CLT</span>
-                    </div>
-                </li>
-                <li>
-                    <a href="#" class="click-area"></a>
-                    <div class="classcompany-box">
-                        <img src="" alt="">
-                        <div class="company-info">
-                            <h3>Developer</h3>
-                            <p>Google</p>
-                        </div>
-                    </div>
-                    <div class="locality">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Mountain View, California</p>
-                    </div>
-                    <div class="job-type">
-                        <span class="clt">CLT</span>
-                    </div>
-                </li>
-            </ul>
-            <div class="btnjobs-container">
-                <a href="#" class="btn-jobs">See more vacancies</a>
-            </div>
-        </main>
-        <section id="sendjobs-container">
-            <div id="sendjobs-inner" class="wrapper">
-                <h2>submit a job that will be seen by thousands of candidates</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nesciunt quis libero mollitia amet eveniet id, repellat illum necessitatibus vero consectetur! Perferendis quia, repudiandae soluta eligendi dolor repellendus? Nemo, molestiae.</p>
-                <a href="#" class="light-btn">send job</a>
-            </div>
-        </section>
-        <section id="status-container" class="wrapper">
-            <h2 class="tittle-center">statics of tasknow</h2>
-            <p class="p-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel laudantium reprehenderit non natus sequi deserunt tempore placeat doloremque dolore. Impedit nesciunt rerum cumque, ducimus quae temporibus dolorem error commodi assumenda!</p>
-            <div>
-                <div class="status-box">
-                    <span class="status-qtd">777</span>
-                    <p class="status-text">open vacancies</p>
-                </div>
-                <div class="status-box">
-                    <span class="status-qtd">3142</span>
-                    <p class="status-text">Candidatos contratados</p>
-                </div>
-                <div class="status-box">
-                    <span class="status-qtd">5632</span>
-                    <p class="status-text">Empresas participantes</p>
-                </div>
-                <div class="status-box">
-                    <span class="status-qtd">67372</span>
-                    <p class="status-text">Candidatos</p>
-                </div>
-            </div>
-        </section>
     </div>
 </body>
 </html>
