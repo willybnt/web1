@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Serviços MAB</title>
 </head>
 <body>
@@ -12,18 +12,251 @@
         <header>
             <nav>
                 <div class="nav-container">
-                    <img id="logo" src="img/logo.png" alt="Serviços MAB">
+                    <img src="img/logo.png" id="logo" alt="Serviços MAB">
                     <ul>
                         <li><a href="#">Encontrar vagas</a></li>
                         <li><a href="#">Enviar vagas</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Contatos</a></li>
                     </ul>
                 </div>
             </nav>
             <div id="main-banner">
-                <div id="search-form"></div>
+                <div id="search-form">
+                    <h1>A maneira mais fácil de encontrar o seu emprego</h1>
+                    <p>Conecte-se de forma gratuita as melhores empresas e consiga o emprego dos seus sonhos.</p>
+                    <form>
+                        <input type="text" name="serviço" placeholder="Digite o cargo">
+                        <select name="região">
+                            <option value="">Todos os estados</option>
+                        </select>
+                        <select name="categorias">
+                            <option value="">Categoria</option>
+                        </select>
+                        <input type="submit" value="Pesquisar">
+                    </form>
+                </div>
             </div>
         </header>
+        <main id="lastjobs-container" class="wrapper">
+            <h1>Ultimas vagas enviadas</h1>
+            <ul>
+                <li>
+                    <a href="#" class="clickarea">
+                        <div class="company-box">
+                            <img src="img/googlelogo.png" alt="logo google">
+                            <div class="company-info">
+                                <h3>Developer</h3>
+                                <p>Google</p>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <i class="fas fa-map-maker-alt"></i>
+                            <p>Mountain View, California</p>
+                        </div>
+                        <div class="job-type">
+                            <span class="clt">CLT</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="clickarea">
+                        <div class="company-box">
+                            <img src="img/ibmlogo.png" alt="logo IBM">
+                            <div class="company-info">
+                                <h3>DBA</h3>
+                                <p>IBM</p>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <i class="fas fa-map-maker-alt"></i>
+                            <p>Armonk, New York</p>
+                        </div>
+                        <div class="job-type">
+                            <span class="pj">PJ</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="clickarea">
+                        <div class="company-box">
+                            <img src="img/linkedinlogo.png" alt="logo linkedin">
+                            <div class="company-info">
+                                <h3>Fornt End Developer</h3>
+                                <p>Linkedin</p>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <i class="fas fa-map-maker-alt"></i>
+                            <p>Sunnyvale, California</p>
+                        </div>
+                        <div class="job-type">
+                            <span class="homeoffice">Home Office</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="clickarea">
+                        <div class="company-box">
+                            <img src="img/facebooklogo.png" alt="logo facebook">
+                            <div class="company-info">
+                                <h3>Full Stack Developer</h3>
+                                <p>Facebook</p>
+                            </div>
+                        </div>
+                        <div class="locality">
+                            <i class="fas fa-map-maker-alt"></i>
+                            <p>Menlo Park, California</p>
+                        </div>
+                        <div class="job-type">
+                            <span class="clt">CLT</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="btnjobs-container">
+                <a href="#" class="btn-jobs">Ver mais vagas</a>
+            </div>
+        </main>
+        <section id="sendjobs-container">
+            <div id="sendjobs-inner" class="wrapper">
+                <h2>Envie uma vaga que será vista por milhares de candidatos.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae mollitia repellendus aperiam error totam! Tempora asperiores architecto placeat eveniet? Necessitatibus obcaecati ut officiis quod labore dolor vitae ad, numquam eaque?
+                </p>
+                <a href="#" class="light-btn">Enviar vaga</a>
+
+            </div>
+        </section>
+        <section id="status-container" class="wrapper">
+            <h2 class="title-center">Estatísticas do Serviços MAB</h2>
+            <p class="p-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe recusandae et ex sint quos ipsum possimus nemo neque quibusdam debitis nostrum, totam quis, soluta rem. Voluptatibus optio nobis voluptas vero.</p>
+            <div>
+                <div class="status-box">
+                    <span class="status-qtd">150</span>
+                    <p class="status-text">Vagas abertas</p>
+                </div>
+                <div class="status-box">
+                    <span class="status-qtd">250</span>
+                    <p class="status-text">Candidatos contratados</p>
+                </div>
+                <div class="status-box">
+                    <span class="status-qtd">50</span>
+                    <p class="status-text">Empresas participantes</p>
+                </div>
+                <div class="status-box">
+                    <span class="status-qtd">550</span>
+                    <p class="status-text">Candidatos</p>
+                </div>
+            </div>
+        </section>
+        <section id="testmony-container">
+            <div class="wrapper">
+                <h2>Veja o que os candidatos dizem</h2>
+                <p class="p-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores officiis est ea, maiores sequi deserunt sed quas natus libero doloremque veritatis exercitationem obcaecati alias ipsum incidunt debitis laboriosam doloribus! Sit.</p>
+                <div class="testmony-box">
+                    <p class="testmony-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo obcaecati ipsa impedit blanditiis, voluptates ducimus odit culpa! Voluptate commodi saepe iusto delectus dolor perferendis totam! Enim, provident! Pariatur, ullam quaerat?</p>
+                    <img src="img/avatar1.png" alt="pfp">
+                    <p class="testmony-name">Jonas</p>
+                </div>
+                <div class="testmony-box">
+                    <p class="testmony-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo obcaecati ipsa impedit blanditiis, voluptates ducimus odit culpa! Voluptate commodi saepe iusto delectus dolor perferendis totam! Enim, provident! Pariatur, ullam quaerat?</p>
+                    <img src="img/avatar2.png" alt="pfp">
+                    <p class="testmony-name">Patrick</p>
+                </div>
+                <div class="testmony-box">
+                    <p class="testmony-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo obcaecati ipsa impedit blanditiis, voluptates ducimus odit culpa! Voluptate commodi saepe iusto delectus dolor perferendis totam! Enim, provident! Pariatur, ullam quaerat?</p>
+                    <img src="img/avatar3.png" alt="pfp">
+                    <p class="testmony-name">Italo</p>
+                </div>
+                <div class="testmony-box">
+                    <p class="testmony-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo obcaecati ipsa impedit blanditiis, voluptates ducimus odit culpa! Voluptate commodi saepe iusto delectus dolor perferendis totam! Enim, provident! Pariatur, ullam quaerat?</p>
+                    <img src="img/avatar4.png" alt="pfp">
+                    <p class="testmony-name">Sara</p>
+                </div>
+            </div>
+        </section>
+        <section id="blog-container" class="wrapper">
+            <h2 class="title-center">Últimos artigos do nosso blog</h2>
+            <p class="p-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quo natus facilis eveniet sed ut soluta earum quibusdam unde, sunt facere laboriosam ea error accusantium velit, expedita officia nostrum temporibus.</p>
+            <div class="article-box">
+                <img src="img/blog1.jpg" alt="fundo blog">
+                <h4><a href="#">Article title</a></h4>
+                <p class="article-date">05 de fevereiro de 2019 | 10 comentários</p>
+                <p class="article-resume">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, distinctio? Iusto, exercitationem adipisci hic optio, recusandae corporis nisi libero sint amet molestias odio provident temporibus. Quo reiciendis harum impedit! Voluptate!</p>
+                <a href="#" class="article-btn light-btn">Ler post</a>
+            </div>
+            <div class="article-box">
+                <img src="img/blog2.jpg" alt="fundo blog">
+                <h4><a href="#">Article title</a></h4>
+                <p class="article-date">05 de fevereiro de 2019 | 10 comentários</p>
+                <p class="article-resume">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, distinctio? Iusto, exercitationem adipisci hic optio, recusandae corporis nisi libero sint amet molestias odio provident temporibus. Quo reiciendis harum impedit! Voluptate!</p>
+                <a href="#" class="article-btn light-btn">Ler post</a>
+            </div>
+            <div class="article-box">
+                <img src="img/blog3.jpg" alt="fundo blog">
+                <h4><a href="#">Article title</a></h4>
+                <p class="article-date">05 de fevereiro de 2019 | 10 comentários</p>
+                <p class="article-resume">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, distinctio? Iusto, exercitationem adipisci hic optio, recusandae corporis nisi libero sint amet molestias odio provident temporibus. Quo reiciendis harum impedit! Voluptate!</p>
+                <a href="#" class="article-btn light-btn">Ler post</a>
+            </div>
+        </section>
+        <footer>
+            <div class="wrapper">
+                <div class="footer-box">
+                    <div class="company-footer">
+                        <img src="img/logo.png" alt="logo Serviços MAB">
+                        <h2>Serviços MAB</h2>
+                        <p>A menira mais fácil de conseguir seu próximo emprego</p>
+                    </div>
+                </div>
+                <div class="footer-box">
+                    <div class="articles-footer">
+                        <h2>Artigos recentes</h2>
+                        <ul class="footer-list footer-article-list">
+                            <li>
+                                <a href="#">Como conseguir o primeiro emprego em tempos de crise</a>
+                                <span class="article-date">05 de fevereiro de 2019</span>
+                            </li>
+                            <li>
+                                <a href="#">Como conseguir o primeiro emprego em tempos de crise</a>
+                                <span class="article-date">05 de fevereiro de 2019</span>
+                            </li>
+                            <li>
+                                <a href="#">Como conseguir o primeiro emprego em tempos de crise</a>
+                                <span class="article-date">05 de fevereiro de 2019</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-box">
+                    <h2>Nos encontre nas redes sociais</h2>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-square"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram-square"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin"></i>
+                                <span>linkedin</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
+            <div class="footer-bottom">
+                <div class="wrapper">
+                    <p>Willy Ribeiro, Ilton Barros e João Paulo</p>
+                </div>
+            </div>          
+        </footer>
     </div>
 </body>
 </html>
