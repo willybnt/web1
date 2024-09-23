@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Job 10</title>
+    <title>Serviços MAB</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="buscarvaga">
         <header>
             <nav>
                 <div class="nav-container">
@@ -19,32 +19,46 @@
                     <ul>
                         <li><a href="ev.html">Encontrar vagas</a></li>
                         <li><a href="sendjobs.html">Enviar vagas</a></li>
-                        <li><a href="#">Contatos</a></li>
+                        <li><a href="contatos.html">Contatos</a></li>
                     </ul>
                 </div>
             </nav>
-            <div id="main-banner">
+        </header>
+        <main id="lastjobs-container" class="wrapper">
+            <h1>Encontre sua vaga!</h1>
+            <div id="job-filter">
                 <div id="search-form">
-                    <h1>A maneira mais fácil de encontrar o seu emprego</h1>
-                    <p>Conecte-se de forma gratuita as melhores empresas e consiga o emprego dos seus sonhos.</p>
                     <form>
-                        <input type="text" name="serviço" placeholder="Digite o cargo">
-                        <select name="região">
+                        <input type="text" name="job" placeholder="Qual cargo você busca?">
+                        <select name="region">
                             <option value="">Todos os estados</option>
                         </select>
-                        <select name="categorias">
-                            <option value="">Categoria</option>
+                        <select name="Category">
+                            <option value="">Categorias</option>
                         </select>
                         <input type="submit" value="Pesquisar">
                     </form>
                 </div>
             </div>
-        </header>
-        <main id="lastjobs-container" class="wrapper">
-            <h1>Ultimas vagas enviadas</h1>
+            <div id="type-filter">
+                <ul>
+                    <li>
+                        <input type="checkbox" checked><label>CLT</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked><label>Home Office</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked><label>PJ</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked><label>Freelancer</label>
+                    </li>
+                </ul>
+            </div>
             <ul>
                 <li>
-                    <a href="job.html" class="clickarea">
+                    <a href="#" class="clickarea">
                         <div class="company-box">
                             <img src="img/googlelogo.png" alt="logo google">
                             <div class="company-info">
@@ -62,7 +76,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="job.html" class="clickarea">
+                    <a href="#" class="clickarea">
                         <div class="company-box">
                             <img src="img/ibmlogo.png" alt="logo IBM">
                             <div class="company-info">
@@ -80,7 +94,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="job.html" class="clickarea">
+                    <a href="#" class="clickarea">
                         <div class="company-box">
                             <img src="img/linkedinlogo.png" alt="logo linkedin">
                             <div class="company-info">
@@ -98,7 +112,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="job.html" class="clickarea">
+                    <a href="#" class="clickarea">
                         <div class="company-box">
                             <img src="img/facebooklogo.png" alt="logo facebook">
                             <div class="company-info">
@@ -117,91 +131,9 @@
                 </li>
             </ul>
             <div class="btnjobs-container">
-                <a href="#" class="btn-jobs">Ver mais vagas</a>
+                <a href="#" class="btn-jobs">Buscar mais vagas</a>
             </div>
         </main>
-        <section id="sendjobs-container">
-            <div id="sendjobs-inner" class="wrapper">
-                <h2>Envie uma vaga que será vista por milhares de candidatos.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae mollitia repellendus aperiam error totam! Tempora asperiores architecto placeat eveniet? Necessitatibus obcaecati ut officiis quod labore dolor vitae ad, numquam eaque?
-                </p>
-                <a href="#" class="light-btn">Enviar vaga</a>
-
-            </div>
-        </section>
-        <section id="status-container" class="wrapper">
-            <h2 class="title-center">Estatísticas do Serviços MAB</h2>
-            <p class="p-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe recusandae et ex sint quos ipsum possimus nemo neque quibusdam debitis nostrum, totam quis, soluta rem. Voluptatibus optio nobis voluptas vero.</p>
-            <div>
-                <div class="status-box">
-                    <span class="status-qtd">150</span>
-                    <p class="status-text">Vagas abertas</p>
-                </div>
-                <div class="status-box">
-                    <span class="status-qtd">250</span>
-                    <p class="status-text">Candidatos contratados</p>
-                </div>
-                <div class="status-box">
-                    <span class="status-qtd">50</span>
-                    <p class="status-text">Empresas participantes</p>
-                </div>
-                <div class="status-box">
-                    <span class="status-qtd">550</span>
-                    <p class="status-text">Candidatos</p>
-                </div>
-            </div>
-        </section>
-        <section id="testmony-container">
-            <div class="wrapper">
-                <h2>Veja o que os candidatos dizem</h2>
-                <p class="p-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores officiis est ea, maiores sequi deserunt sed quas natus libero doloremque veritatis exercitationem obcaecati alias ipsum incidunt debitis laboriosam doloribus! Sit.</p>
-                <div class="testmony-box">
-                    <p class="testmony-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo obcaecati ipsa impedit blanditiis, voluptates ducimus odit culpa! Voluptate commodi saepe iusto delectus dolor perferendis totam! Enim, provident! Pariatur, ullam quaerat?</p>
-                    <img src="img/avatar1.png" alt="pfp">
-                    <p class="testmony-name">Jonas</p>
-                </div>
-                <div class="testmony-box">
-                    <p class="testmony-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo obcaecati ipsa impedit blanditiis, voluptates ducimus odit culpa! Voluptate commodi saepe iusto delectus dolor perferendis totam! Enim, provident! Pariatur, ullam quaerat?</p>
-                    <img src="img/avatar2.png" alt="pfp">
-                    <p class="testmony-name">Patrick</p>
-                </div>
-                <div class="testmony-box">
-                    <p class="testmony-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo obcaecati ipsa impedit blanditiis, voluptates ducimus odit culpa! Voluptate commodi saepe iusto delectus dolor perferendis totam! Enim, provident! Pariatur, ullam quaerat?</p>
-                    <img src="img/avatar3.png" alt="pfp">
-                    <p class="testmony-name">Italo</p>
-                </div>
-                <div class="testmony-box">
-                    <p class="testmony-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo obcaecati ipsa impedit blanditiis, voluptates ducimus odit culpa! Voluptate commodi saepe iusto delectus dolor perferendis totam! Enim, provident! Pariatur, ullam quaerat?</p>
-                    <img src="img/avatar4.png" alt="pfp">
-                    <p class="testmony-name">Sara</p>
-                </div>
-            </div>
-        </section>
-        <section id="blog-container" class="wrapper">
-            <h2 class="title-center">Últimos artigos do nosso blog</h2>
-            <p class="p-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quo natus facilis eveniet sed ut soluta earum quibusdam unde, sunt facere laboriosam ea error accusantium velit, expedita officia nostrum temporibus.</p>
-            <div class="article-box">
-                <img src="img/blog1.jpg" alt="fundo blog">
-                <h4><a href="#">Article title</a></h4>
-                <p class="article-date">05 de fevereiro de 2019 | 10 comentários</p>
-                <p class="article-resume">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, distinctio? Iusto, exercitationem adipisci hic optio, recusandae corporis nisi libero sint amet molestias odio provident temporibus. Quo reiciendis harum impedit! Voluptate!</p>
-                <a href="#" class="article-btn light-btn">Ler post</a>
-            </div>
-            <div class="article-box">
-                <img src="img/blog2.jpg" alt="fundo blog">
-                <h4><a href="#">Article title</a></h4>
-                <p class="article-date">05 de fevereiro de 2019 | 10 comentários</p>
-                <p class="article-resume">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, distinctio? Iusto, exercitationem adipisci hic optio, recusandae corporis nisi libero sint amet molestias odio provident temporibus. Quo reiciendis harum impedit! Voluptate!</p>
-                <a href="#" class="article-btn light-btn">Ler post</a>
-            </div>
-            <div class="article-box">
-                <img src="img/blog3.jpg" alt="fundo blog">
-                <h4><a href="#">Article title</a></h4>
-                <p class="article-date">05 de fevereiro de 2019 | 10 comentários</p>
-                <p class="article-resume">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, distinctio? Iusto, exercitationem adipisci hic optio, recusandae corporis nisi libero sint amet molestias odio provident temporibus. Quo reiciendis harum impedit! Voluptate!</p>
-                <a href="#" class="article-btn light-btn">Ler post</a>
-            </div>
-        </section>
         <footer>
             <div class="wrapper">
                 <div class="footer-box">

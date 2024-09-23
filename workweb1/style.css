@@ -14,6 +14,8 @@ h1, h2, h3, h4, h5, p, span{
 .container{
     max-width: 1920px;
     width: 100%;
+    position: relative;
+    margin: 0 auto;
 }
 
 /* header */
@@ -119,7 +121,7 @@ nav:after{
     margin: 0 10px;
 }
 
-#search-form input[type=submit] {
+#search-form input[type=submit], #sendjobs input[type=submit] {
     background-color: #3381f3;
     text-transform: uppercase;
     color: #fff;
@@ -127,12 +129,11 @@ nav:after{
     transition: .5s;
 }
 
-#search-form input[type=submit]:hover {
+#search-form input[type=submit]:hover, #senjobs input[type=submit] {
     background-color: #2b79eb;
 }
 
 /* seção de ultimos empregos */
-
 #lastjobs-container{
     text-align: center;
     padding: 100px 0;
@@ -595,56 +596,124 @@ footer .wrapper::after{
     margin-top: 40px;
 }
 
-/* responsive */
-@media screen and (max-width: 576px) {
-        .nav-container .btn-menumobile{
-            display: block !important;
-        }
+/* encontrar vagas page ev.html */
 
-        html, body {
-            overflow-x: hidden;
-        }
+#buscarvaga #search-form{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 100%;
+    background-color: #3381f3;
+    border-top: 5px solid #0000e6;
+}
 
-        nav {
-            height: 4em;
-        }
+#buscarvaga #lastjobs-container{
+    margin-top: 3em;
+}
 
-        #logo{
-            left: 2em;
-            height: 2em;
-            width: 2em;
-            margin-top: 1em;
-        }
+#search-form input, #search-form select{
+    width: 20%;
+}
 
-        .btn-menumobile{
-            display: block;
-            font-size: 1.75em;
-            color: #ccc;
-            position: absolute;
-            right: 1.5em;
-            top: .75em;
-        }
+#bascarvaga #search-form input[type=submit]{
+    background-color: #fff;
+    color: #3381f3;
+}
 
-        .nav-container ul{
-            position: relative;
-            top: 4em;
-            height: 3em;
-            line-height: 3em;
-            display: none;        
-        }
+#buscarvaga #lastjobs-container ul{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 0;
+}
 
-        .nav-container ul li{
-            display: block;
-            background-color: #fff;
-            margin: 0;
-            border-top: 1px solid #ccc;
-        }
+#type-filter{
+    text-align: left;
+}
 
-        .nav-container ul li a{
-            font-size: 1em;
-        }
+#buscarvaga #type-filter ul{
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+}
 
-        .open {
-            display: block !important;
-        }
+#buscarvaga #type-filter ul li{
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: none;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-left: 1em;
+}
+
+#buscarvaga #type-filter ul li:nth-child(1), #buscarvaga #type-filter ul li:nth-child(2), #buscarvaga #type-filter ul li:nth-child(3){
+    border-right: none;
+}
+
+#buscarvaga #type-filter label{
+    text-transform: uppercase;
+    color: #666;
+    font-weight: bold;
+    margin-left: .5em;
+}
+
+/* sendjobs page*/
+#sendjobs #sendjobs-container {
+	margin-top: 100px;
+	background: none;
+	padding: 5em 0;
+}
+
+#sendjobs h1 {
+	font-size: 36px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.input-box {
+	margin-bottom: 2em;
+	width: 50%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#sendjobs label {
+	text-transform: uppercase;
+	color: #666;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 1em;
+}
+
+#sendjobs input {
+	border-radius: 5px;
+	border: solid 1px #CCC;
+	margin: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#sendjobs textarea, #sendjobs select {
+	border: 1px solid #CCC;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#sendjobs input[type=submit] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+
+.input-box:after {
+	clear: both;
+	content: "";
+	display: block;
 }
