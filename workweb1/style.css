@@ -17,7 +17,6 @@ h1, h2, h3, h4, h5, p, span{
 }
 
 /* header */
-
 header{
     position: relative;
     top: 0;
@@ -25,8 +24,12 @@ header{
     width: 100%;
 }
 
-/* navbar */
+/* hide on desktop */
+.nav-container .btn-menumobile{
+    display: none;
+}
 
+/* navbar */
 nav{
     position: fixed;
     top: 0;
@@ -489,4 +492,159 @@ nav:after{
 .article-btn:hover{
     background-color: #fff;
     color: #3381f3;
+}
+
+/* footer */
+
+footer{
+    background-color: #666;
+    padding-top: 5em;
+    padding-bottom: 40px;
+    border-top: 5px solid #3381f3;
+}
+
+footer h2, footer p, footer a, footer span{
+    color: #d1d1d1;
+}
+
+footer h2{
+    font-weight: 400;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer ul{
+    padding: 0;
+}
+
+footer li{
+    list-style: none;
+}
+
+.footer-box{
+    width: 31%;
+    padding: 1%;
+    float: left;
+}
+
+footer .wrapper::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.company-footer{
+    width: 80%;
+}
+
+.company-footer h2{
+    margin-top: 20px;
+}
+
+.company-footer h2, .company-footer p{
+    margin-bottom: 20px;
+}
+
+.footer-list li{
+    margin-bottom: 15px;
+}
+
+.footer-list a{
+    transition: .5s;
+}
+
+.footer-list a:hover{
+     color: #fff;
+}
+
+.footer-list li::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.article-footer{
+    width: 80%;
+}
+
+.footer-list .footer-article-list span{
+    display: block;
+    float: none;
+}
+
+.fab {
+    font-size: 30px;
+    margin-right: 10px;
+    float: left;
+}
+
+.footer-list li span{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.footer-bottom{
+    border-top: 1px solid #b2b2b2;
+}
+
+.footer-bottom p{
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+/* responsive */
+@media screen and (max-width: 576px) {
+        .nav-container .btn-menumobile{
+            display: block !important;
+        }
+
+        html, body {
+            overflow-x: hidden;
+        }
+
+        nav {
+            height: 4em;
+        }
+
+        #logo{
+            left: 2em;
+            height: 2em;
+            width: 2em;
+            margin-top: 1em;
+        }
+
+        .btn-menumobile{
+            display: block;
+            font-size: 1.75em;
+            color: #ccc;
+            position: absolute;
+            right: 1.5em;
+            top: .75em;
+        }
+
+        .nav-container ul{
+            position: relative;
+            top: 4em;
+            height: 3em;
+            line-height: 3em;
+            display: none;        
+        }
+
+        .nav-container ul li{
+            display: block;
+            background-color: #fff;
+            margin: 0;
+            border-top: 1px solid #ccc;
+        }
+
+        .nav-container ul li a{
+            font-size: 1em;
+        }
+
+        .open {
+            display: block !important;
+        }
 }
